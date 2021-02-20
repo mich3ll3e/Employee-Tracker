@@ -9,7 +9,7 @@ CREATE TABLE employee(
     last_name VARCHAR(30) NULL,
     role_id INT,
     manager_id INT,
-    PRIMARY KEY (position)
+    PRIMARY KEY (id)
 );
 
 CREATE TABLE roles(
@@ -17,13 +17,13 @@ CREATE TABLE roles(
     titile VARCHAR(30) NULL,
     salary DECIMAL NOT NULL,
     department_id INT,
-    PRIMARY KEY (position)
+    PRIMARY KEY (id)
 );
 
 CREATE TABLE department(
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(30),
-    PRIMARY KEY (position)
+    PRIMARY KEY (id)
 );
 
 SELECT * FROM employees;
