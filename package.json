@@ -1,8 +1,8 @@
 {
-    "name": "top-5000-songs",
+    "name": "employeetracker",
     "version": "1.0.0",
     "description": "",
-    "main": "TopSongsCode.js",
+    "main": "server.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
