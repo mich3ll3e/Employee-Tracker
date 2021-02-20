@@ -14,7 +14,7 @@ CREATE TABLE employee(
 
 CREATE TABLE roles(
     id INT NOT NULL AUTO_INCREMENT,
-    titile VARCHAR(30) NULL,
+    title VARCHAR(30) NULL,
     salary DECIMAL NOT NULL,
     department_id INT,
     PRIMARY KEY (id)
@@ -26,4 +26,4 @@ CREATE TABLE department(
     PRIMARY KEY (id)
 );
 
-SELECT * FROM employees;
+SELECT * FROM employee;
