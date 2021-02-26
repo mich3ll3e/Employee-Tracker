@@ -1,3 +1,31 @@
+DROP DATABASE IF EXISTS employeeDB;
+CREATE database employeeDB;
+
+USE employeeDB;
+
+CREATE TABLE employee(
+    id INT NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(30) NULL,
+    last_name VARCHAR(30) NULL,
+    role_id INT,
+    manager_id INT,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE roles(
+    id INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(30) NULL,
+    salary DECIMAL NOT NULL,
+    department_id INT,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE department(
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(30),
+    PRIMARY KEY (id)
+);
+
 /* Seeds for SQL table. We haven't discussed this type of file yet */
 USE employeeDB;
 
@@ -35,4 +63,3 @@ VALUES ("CEO", 250000, 1)
 
 INSERT INTO department (name)
 VALUES ("Sales"),("Enginering"), ("Finance"),("Legal");
-SELECT * FROM roles;
